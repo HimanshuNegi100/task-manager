@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(83, 84, 84);
+}
+#container {
+  width: 100vw;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+}
+h1 {
+  margin: 20px;
+  color: wheat;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#task-input {
+  padding: 5px;
+  border-radius: 2px;
+  width: auto;
+  margin-right: 10px;
+}
+.submit-button {
+  padding: 6px;
+  border-radius: 2px;
+  background-color: rgb(80, 137, 80);
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
+}
+#task-list {
+  margin-top: 20px;
+  align-self: right;
+}
+#task-list li {
+  font-size: 1.2rem;
+  font-weight: bold;
+  min-height: 50px;
+  height: fit-content;
+  width: 80vw;
+  background-color: rgb(94, 209, 238);
+  padding: 10px;
+  margin: 5px;
+  border-radius: 2px;
+  color: rgb(13, 13, 13);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#task-list li button {
+  padding: 5px;
+  border-radius: 2px;
+  background-color: rgb(222, 103, 103);
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  margin: 5px;
+}
+#task-list li button:hover {
+  background-color: rgb(255, 0, 0);
+}
+input[type="checkbox"] {
+  transform: scale(1.5);
+  order: -2;
+  margin: 5px;
+}
