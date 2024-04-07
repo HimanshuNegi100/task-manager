@@ -77,3 +77,6 @@ input[type="checkbox"] {
   order: -2;
   margin: 5px;
 }
+.completed {
+  text-decoration: line-through;
+}

@@ -3,25 +3,29 @@ function addTask() {
   var taskDescription = taskInput.value;
 
   var taskItem = document.createElement("li");
-  taskItem.innerHTML = taskDescription;
+  var text = document.createElement("p");
+  text.innerText = taskDescription;
 
   var checkbox = document.createElement("input");
   checkbox.type = "checkbox";
   checkbox.addEventListener("change", function () {
     if (this.checked) {
-      taskItem.classList.add("completed");
+      text.classList.add("completed");
     } else {
-      taskItem.classList.remove("completed");
+      text.classList.remove("completed");
     }
   });
 
   var removeButton = document.createElement("button");
+
   removeButton.innerHTML = "Remove";
+
   removeButton.addEventListener("click", function () {
     taskItem.remove();
   });
 
   taskItem.appendChild(checkbox);
+  taskItem.appendChild(text);
   taskItem.appendChild(removeButton);
 
   var taskList = document.getElementById("task-list");
